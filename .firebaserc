@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "seguimiento-mercaderista",
+    "seguimiento-mercaderista": "seguimiento-mercaderista"
+  },
+  "targets": {},
+  "etags": {}
+}
