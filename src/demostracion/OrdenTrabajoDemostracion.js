@@ -15,6 +15,7 @@ function OrdenTrabajoDemostracion({ color }) {
         handleQrGenerador,
         handleEliminar,
         handleVer,
+        handleVerificar,
         handleMap
       }) => (
         <>
@@ -73,6 +74,12 @@ function OrdenTrabajoDemostracion({ color }) {
                                 <button onClick={() => handleVer(event.id)} className="bg-teal-500 text-white active:bg-teal-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                                   <i className="fas fa-eye"></i>
                                 </button>
+
+                                <button onClick={() => handleVerificar(event.id)} className="bg-yellow-500 text-white active:bg-teal-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                  <i className="fas fa-object-group"></i>
+                                </button>
+
+
                                 <button onClick={() => handleFormularioActualizar(event.id)} className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                                   <i className="fas fa-edit"></i>
                                 </button>

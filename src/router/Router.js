@@ -26,6 +26,7 @@ import ActualizarSucursalDemostracion from 'demostracion/ActualizarSucursalDemos
 import VerOrdenTrabajoDemostracion from 'demostracion/VerOrdenTrabajoDemostracion';
 import VisualizarDemostracion from 'demostracion/VisualizarDemostracion';
 import RegistrarMapaOrden from 'demostracion/RegistrarMapaOrden';
+import VerificarImagen from 'demostracion/VerificarImagen';
 
 function router() {
     return (
@@ -57,7 +58,7 @@ function router() {
                     <Route path={'verOrdenTrabajo/:id'} element={<VerOrdenTrabajoDemostracion />}></Route> 
                     <Route path={'/visualizar'} element={<VisualizarDemostracion/>}></Route>
                     <Route path={'/registrarMapa'} element={<RegistrarMapaOrden />}></Route>
-
+                    <Route path={'verificarImagen/:id'} element={<VerificarImagen />}></Route>
                 </Routes>
             </AuthProvider>                
         </BrowserRouter>

@@ -115,6 +115,10 @@ function OrdenTrabajoDominio(props) {
         }));
     };
 
+    const handleVerificar = (id) => {
+        navigate(`/verificarImagen/${id}`);
+    }; 
+
     const handleAgregar = async (event) => {
         event.preventDefault();
         setError(null);
@@ -205,6 +209,7 @@ function OrdenTrabajoDominio(props) {
             handleEliminar,
             handleQrGenerador,
             handleVer,
+            handleVerificar,
             handleMap,
             navigate,
             handleMapRightClick,
